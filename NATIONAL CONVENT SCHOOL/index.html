@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Convent School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Running Welcome Banner -->
+    <div class="top-banner">
+        <marquee>
+            ★ WELCOME TO NATIONAL CONVENT SCHOOL ★
+            LEARN TODAY, LEAD TOMORROW ★ ADMISSIONS OPEN ★
+        </marquee>
+    </div>
+
+    <!-- School Header -->
+    <header class="school-header">
+        <div class="school-logo">NCS</div>
+        <h1>NATIONAL CONVENT SCHOOL</h1>
+        <p>Sarahula, Ghazipur, Uttar Pradesh</p>
+        <p class="tagline">Knowledge • Discipline • Excellence</p>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="layout">
+
+        <!-- Left Sidebar -->
+        <nav class="sidebar">
+            <button class="nav-btn active" data-page="home">🏠 Home</button>
+            <button class="nav-btn" data-page="about">🏫 About School</button>
+            <button class="nav-btn" data-page="academics">📚 Academics</button>
+            <button class="nav-btn" data-page="admissions">📝 Admissions</button>
+            <button class="nav-btn" data-page="teachers">👩‍🏫 Teachers Gallery</button>
+            <button class="nav-btn" data-page="facilities">🏆 Facilities</button>
+            <button class="nav-btn" data-page="gallery">🖼️ Gallery</button>
+            <button class="nav-btn" data-page="results">📊 Results</button>
+            <button class="nav-btn" data-page="contact">📍 Contact Us</button>
+
+            <a class="email-btn" id="emailButton"
+               href="mailto:?subject=Enquiry%20-%20National%20Convent%20School">
+                ✉ Email the School
+            </a>
+        </nav>
+
+        <!-- Website Content -->
+        <section class="content-panel">
+
+            <!-- HOME -->
+            <section class="page-section active" id="home">
+                <span class="eyebrow">WELCOME TO OUR SCHOOL</span>
+                <h2>Building Bright Futures</h2>
+
+                <p>
+                    Welcome to National Convent School, Sarahula,
+                    Ghazipur, Uttar Pradesh. Our aim is to support
+                    learning, creativity, confidence and good character.
+                </p>
+
+                <div class="hero-card">
+                    <div>
+                        <h3>Learn. Grow. Succeed.</h3>
+                        <p>Every student deserves the opportunity to shine.</p>
+                        <button class="primary-btn" data-go="admissions">
+                            Explore Admissions →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>📚 Academics</h3>
+                        <p>Explore our academic information.</p>
+                        <button data-go="academics">Learn More</button>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>👩‍🏫 Our Teachers</h3>
+                        <p>Meet our teaching team.</p>
+                        <button data-go="teachers">View Teachers</button>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>📢 School Updates</h3>
+                        <p>Important notices and announcements.</p>
+                        <button data-go="contact">Contact School</button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- ABOUT SCHOOL -->
+            <section class="page-section" id="about">
+                <h2>About Our School</h2>
+
+                <p>
+                    National Convent School is located in Sarahula,
+                    Ghazipur, Uttar Pradesh.
+                </p>
+
+                <h3>Our Vision</h3>
+                <p>
+                    To encourage knowledge, discipline, creativity
+                    and lifelong learning.
+                </p>
+
+                <h3>Our Mission</h3>
+                <p>
+                    To provide a supportive learning environment for students.
+                </p>
+
+                <h3>Principal's Message</h3>
+                <p>Add the principal's approved message here.</p>
+            </section>
+
+            <!-- ACADEMICS -->
+            <section class="page-section" id="academics">
+                <h2>Academics &amp; Subjects</h2>
+
+                <p>Select your class to see the suggested subjects.</p>
+
+                <div class="info-card subject-selector-card">
+                    <label for="classSubjectSelect">
+                        <strong>Select Your Class:</strong>
+                    </label>
+
+                    <select id="classSubjectSelect">
+                        <option value="">-- Choose a Class --</option>
+                        <option value="Nursery">Nursery</option>
+                        <option value="LKG">LKG</option>
+                        <option value="UKG">UKG</option>
+                        <option value="Class 1">Class 1</option>
+                        <option value="Class 2">Class 2</option>
+                        <option value="Class 3">Class 3</option>
+                        <option value="Class 4">Class 4</option>
+                        <option value="Class 5">Class 5</option>
+                        <option value="Class 6">Class 6</option>
+                        <option value="Class 7">Class 7</option>
+                        <option value="Class 8">Class 8</option>
+                    </select>
+                </div>
+
+                <div id="subjectsDisplay"
+                     class="info-card subjects-display"
+                     aria-live="polite">
+                    <h3>📚 Class Subjects</h3>
+                    <p>Please select a class to see its suggested subjects.</p>
+                </div>
+
+                <p class="note">
+                    Important: These are suggested subjects only.
+                    Please verify them with the school's approved syllabus.
+                </p>
+
+                <h3>Examinations</h3>
+                <p>
+                    Add the school's verified examination schedule
+                    and academic calendar here.
+                </p>
+            </section>
+
+            <!-- PROFESSIONAL ADMISSION FORM -->
+            <section class="page-section" id="admissions">
+
+                <div class="admission-heading">
+                    <span class="admission-tag">ONLINE ENQUIRY</span>
+                    <h2>Student Admission Form</h2>
+                    <p><strong>National Convent School</strong></p>
+                    <p>Sarahula, Ghazipur, Uttar Pradesh</p>
+                    <p>Please fill in the student details carefully.</p>
+                </div>
+
+                <form id="admissionForm" class="admission-form">
+
+                    <h3>1. Student Details</h3>
+
+                    <div class="admission-grid">
+
+                        <div class="form-group">
+                            <label for="studentName">Student Full Name *</label>
+                            <input id="studentName"
+                                   name="studentName"
+                                   type="text"
+                                   maxlength="80"
+                                   placeholder="Enter student name"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth *</label>
+                            <input id="dob"
+                                   name="dob"
+                                   type="date"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" name="gender" required>
+                                <option value="">Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                                <option value="Prefer not to say">
+                                    Prefer not to say
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="className">Class Applying For *</label>
+                            <select id="className" name="className" required>
+                                <option value="">Select class</option>
+                                <option>Nursery</option>
+                                <option>LKG</option>
+                                <option>UKG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                                <option>Class 11</option>
+                                <option>Class 12</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <h3>2. Parent / Guardian Details</h3>
+
+                    <div class="admission-grid">
+
+                        <div class="form-group">
+                            <label for="parentName">
+                                Parent / Guardian Full Name *
+                            </label>
+                            <input id="parentName"
+                                   name="parentName"
+                                   type="text"
+                                   maxlength="80"
+                                   placeholder="Enter parent name"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parentMobile">Mobile Number *</label>
+                            <input id="parentMobile"
+                                   name="parentMobile"
+                                   type="tel"
+                                   inputmode="numeric"
+                                   pattern="[0-9]{10}"
+                                   maxlength="10"
+                                   placeholder="10-digit mobile number"
+                                   title="Enter a 10-digit mobile number"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="parentEmail">Email Address</label>
+                            <input id="parentEmail"
+                                   name="parentEmail"
+                                   type="email"
+                                   maxlength="120"
+                                   placeholder="Enter email address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="previousSchool">
+                                Previous School (if any)
+                            </label>
+                            <input id="previousSchool"
+                                   name="previousSchool"
+                                   type="text"
+                                   maxlength="120"
+                                   placeholder="Previous school name">
+                        </div>
+
+                    </div>
+
+                    <h3>3. Address Details</h3>
+
+                    <div class="form-group">
+                        <label for="address">Full Address *</label>
+                        <textarea id="address"
+                                  name="address"
+                                  rows="3"
+                                  maxlength="300"
+                                  placeholder="Village, post, district, state and PIN code"
+                                  required></textarea>
+                    </div>
+
+                    <h3>4. Student Photograph</h3>
+
+                    <div class="form-group">
+                        <label for="studentPhoto">
+                            Upload Student Photo (JPG/PNG) *
+                        </label>
+
+                        <input id="studentPhoto"
+                               name="studentPhoto"
+                               type="file"
+                               accept="image/jpeg,image/png"
+                               required>
+
+                        <small>Choose a JPG or PNG image, maximum size 2 MB.</small>
+
+                        <div class="photo-preview-box">
+                            <img id="photoPreview"
+                                 alt="Student photo preview"
+                                 hidden>
+
+                            <p id="photoPlaceholder">
+                                Photo preview will appear here.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="admission-consent">
+                        <label class="consent-label" for="confirmDetails">
+                            <input type="checkbox"
+                                   id="confirmDetails"
+                                   name="confirmDetails"
+                                   required>
+                            <span>
+                                I confirm that the details entered above are correct.
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="admission-submit">
+                        Check Application Details
+                    </button>
+
+                    <p id="admissionMessage"
+                       class="admission-message"
+                       role="status"
+                       aria-live="polite"></p>
+
+                    <p class="admission-note">
+                        Demo form: Your information is not sent or saved online.
+                        Contact the school to complete the admission process.
+                    </p>
+
+                </form>
+            </section>
+
+            <!-- TEACHERS GALLERY -->
+            <section class="page-section" id="teachers">
+                <h2>Our Teachers Gallery</h2>
+
+                <p>
+                    Meet our teachers. Add approved teacher photos
+                    and verified qualifications.
+                </p>
+
+                <div class="teacher-grid">
+
+                    <article class="teacher-card">
+                        <img src="principal.jpg"
+                             alt="Rohit Singh"
+                             onerror="this.style.display='none'">
+
+                        <div>
+                            <h3>ROHIT SINGH</h3>
+                            <p><strong>Qualification:</strong> M.A., B.Ed.</p>
+                            <p><strong>Subject:</strong> Hindi</p>
+                            <p><strong>Experience:</strong> Add verified details</p>
+                        </div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <img src="teacher2.jpg"
+                             alt="Teacher 2"
+                             onerror="this.style.display='none'">
+
+                        <div>
+                            <h3>Teacher Name 2</h3>
+                            <p><strong>Qualification:</strong> M.Sc., B.Ed.</p>
+                            <p><strong>Subject:</strong> Science</p>
+                            <p><strong>Experience:</strong> Add verified details</p>
+                        </div>
+                    </article>
+
+                    <article class="teacher-card">
+                        <img src="teacher3.jpg"
+                             alt="Teacher 3"
+                             onerror="this.style.display='none'">
+
+                        <div>
+                            <h3>Teacher Name 3</h3>
+                            <p><strong>Qualification:</strong> B.A., B.Ed.</p>
+                            <p><strong>Subject:</strong> English</p>
+                            <p><strong>Experience:</strong> Add verified details</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="note">
+                    Keep principal.jpg, teacher2.jpg and teacher3.jpg
+                    in the same folder as index.html.
+                </p>
+            </section>
+
+            <!-- FACILITIES -->
+            <section class="page-section" id="facilities">
+                <h2>School Facilities</h2>
+
+                <div class="info-grid">
+                    <article class="info-card">
+                        <h3>📖 Library</h3>
+                        <p>Add verified library details.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>💻 Computer Lab</h3>
+                        <p>Add available computer facilities.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>⚽ Sports</h3>
+                        <p>Add available sports and activities.</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>🔬 Science Lab</h3>
+                        <p>Add details if the school has a science lab.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SCHOOL GALLERY -->
+            <section class="page-section" id="gallery">
+                <h2>School Gallery</h2>
+                <p>Add approved school photographs and event images here.</p>
+
+                <div class="gallery-placeholder">
+                    <span>📸</span>
+                    <p>School Events • Annual Function • Sports Day</p>
+                    <small>Add your own photos to create the gallery.</small>
+                </div>
+            </section>
+
+            <!-- RESULTS -->
+            <section class="page-section" id="results">
+                <h2>Student Results</h2>
+
+                <p>
+                    Official results can be added here after verification.
+                    Do not publish private student information publicly.
+                </p>
+
+                <div class="info-card">
+                    <h3>Examination Updates</h3>
+                    <p>
+                        Contact the school office for verified result information.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="page-section" id="contact">
+                <h2>Contact Our School</h2>
+
+                <div class="info-card">
+                    <h3>National Convent School</h3>
+                    <p>
+                        <strong>Address:</strong>
+                        Sarahula, Ghazipur, Uttar Pradesh
+                    </p>
+                    <p>
+                        <strong>Email:</strong>
+                        Add the school's official email in script.js
+                    </p>
+                    <p>
+                        <strong>Phone:</strong>
+                        Add the school's verified phone number
+                    </p>
+                </div>
+
+                <button class="primary-btn" data-email>
+                    ✉ Email the School
+                </button>
+            </section>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> National Convent School</p>
+        <p>Sarahula, Ghazipur, Uttar Pradesh</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
